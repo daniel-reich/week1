@@ -29,26 +29,20 @@ public class IfThenElse {
         if (currentSpeed>0){
             // TODO: logic here
             // the inner "if" clause: currentSpeed operators
-            if(currentSpeed>0 && currentSpeed<50){
-                System.out.println("Slow ("+currentSpeed+"mph)");
-            }else if (currentSpeed>50 && currentSpeed<100){
-                System.out.println("Fast ("+currentSpeed+"mph)");
+            if(currentSpeed>100){
+                currentSpeed=currentSpeed-1;
             }else{
-                System.out.println("Too Fast! ("+currentSpeed+"mph)");
+                currentSpeed=currentSpeed-1;
             }
-        
-            
         }else{
-            System.out.println("Not moving");
+            currentSpeed=10;
         }
     }
         
         
     public static void main(String[] args){
         IfThenElse Bike = new IfThenElse();
-        Bike.howFast();
         System.out.println("Is the bike moving? "+Bike.isMoving());
-        
         Bike.applyBrakes();
         Bike.howFast();
     }      
