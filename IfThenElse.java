@@ -32,7 +32,7 @@ public class IfThenElse {
             if(currentSpeed>100){
                 currentSpeed=currentSpeed-1;
             }else{
-                currentSpeed=currentSpeed-1;
+                currentSpeed=currentSpeed+1;
             }
         }else{
             currentSpeed=10;
