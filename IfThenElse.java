@@ -16,7 +16,7 @@ public class IfThenElse {
 
     // if-then
     public void applyBrakes() {
-        if (currentSpeed > 0){// the "if" clause: bicycle must be moving
+        if (isMoving()){// the "if" clause: bicycle must be moving
         // TODO: logic here
             currentSpeed--;
             }// the "then" clause: decrease current speed
@@ -26,7 +26,7 @@ public class IfThenElse {
     // nested if-then-else and if-then-else-if
     public void howFast() {
         // the outer "if" clause: bicycle must be moving
-        if (currentSpeed>0){
+        if (isMoving()){
             // TODO: logic here
             // the inner "if" clause: currentSpeed operators
             if(currentSpeed>100){
@@ -48,3 +48,4 @@ public class IfThenElse {
     }      
     
 }
+
